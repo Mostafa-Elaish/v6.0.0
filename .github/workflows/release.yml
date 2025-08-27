@@ -13,7 +13,7 @@ jobs:
       - name: Zip release contents
         run: |
           mkdir jarvis-v6
-          cp -r src ui config-templates docs CHANGELOG.txt jarvis-v6/
+          cp -r project/src project/ui project/config-templates project/docs project/CHANGELOG.txt jarvis-v6/
           zip -r jarvis-v6.zip jarvis-v6
 
       - name: Create GitHub Release
